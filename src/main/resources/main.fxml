@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="227.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainController">
+   <children>
+      <StackPane alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="276.0">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="135.89" radius="67.6325" width="136.64" />
+         </effect>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="62.0" stroke="WHITE" strokeType="INSIDE" width="227.0" />
+            <Label fx:id="calcLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="227.0" spacing="10.0">
+         <children>
+            <Button fx:id="sevenButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="7" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="eightButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="8">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="nineButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="9">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="divideButton" mnemonicParsing="false" onAction="#opInput" prefWidth="50.0" text="/">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clear" prefWidth="50.0" text="CE">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="35.83" radius="15.932499999999997" width="29.9" />
+         </effect>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="227.0" spacing="10.0">
+         <children>
+            <Button fx:id="fourButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#numInput" prefHeight="25.0" prefWidth="39.0" text="4" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="fiveButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="5" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="sixButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="6" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="multButton" mnemonicParsing="false" onAction="#opInput" prefWidth="50.0" text="*" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="subtractButton" mnemonicParsing="false" onAction="#opInput" prefWidth="50.0" text="-">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorInput />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="44.72" radius="18.895" width="32.86" />
+         </effect>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="227.0" spacing="10.0">
+         <children>
+            <Button fx:id="oneButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="1" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting diffuseConstant="1.02" specularConstant="1.6" specularExponent="27.91" surfaceScale="6.74">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <ColorInput />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="twoButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="2" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting diffuseConstant="1.02" specularConstant="1.6" specularExponent="27.91" surfaceScale="6.74">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <ColorInput />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="threeButton" mnemonicParsing="false" onAction="#numInput" prefWidth="50.0" text="3" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting diffuseConstant="1.02" specularConstant="1.6" specularExponent="27.91" surfaceScale="6.74">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <ColorInput />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefWidth="50.0" text="Button" HBox.hgrow="NEVER">
+               <effect>
+                  <ColorInput />
+               </effect>
+            </Button>
+            <Button fx:id="powerButton" mnemonicParsing="false" onAction="#opInput" prefWidth="50.0" text="^" HBox.hgrow="NEVER">
+               <effect>
+                  <Lighting diffuseConstant="1.02" specularConstant="1.6" specularExponent="27.91" surfaceScale="6.74">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <ColorInput />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#77eada" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="47.69" radius="17.415" width="23.97" />
+         </effect>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="227.0" spacing="10.0">
+         <children>
+            <Button fx:id="zeroButton" mnemonicParsing="false" onAction="#numInput" prefHeight="33.0" prefWidth="96.0" text="0" HBox.hgrow="NEVER">
+               <effect>
+                  <DropShadow height="44.72" radius="19.6375" width="35.83" />
+               </effect>
+            </Button>
+            <Button fx:id="equalsButton" mnemonicParsing="false" onAction="#opInput" prefHeight="35.0" prefWidth="46.0" text="=" HBox.hgrow="NEVER">
+               <effect>
+                  <DropShadow height="44.72" radius="19.6375" width="35.83" />
+               </effect>
+            </Button>
+            <Button fx:id="plusButton" mnemonicParsing="false" onAction="#opInput" prefHeight="35.0" prefWidth="46.0" text="+">
+               <effect>
+                  <DropShadow height="44.72" radius="19.6375" width="35.83" />
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#77eada" />
+               </light>
+            </Lighting>
+         </effect>
+      </HBox>
+   </children>
+</VBox>
